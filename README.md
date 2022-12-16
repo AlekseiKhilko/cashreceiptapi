@@ -6,10 +6,13 @@
 https://hub.docker.com/r/alekseikhilko/cashreceiptapi
 
 # GIT
-https://github.com/AlekseiKhilko/cashreceiptapi
+git clone https://github.com/AlekseiKhilko/cashreceiptapi
 
+cd cashreceiptapi 
 
-# Инициализация базы (товаров и скидочных карт)
+docker-compose up
+
+ Инициализация базы (товаров и скидочных карт)
 http://127.0.0.1:8080/init
 
 ## Получить чек
