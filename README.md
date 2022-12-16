@@ -8,11 +8,6 @@ https://hub.docker.com/r/alekseikhilko/cashreceiptapi
 # GIT
 https://github.com/AlekseiKhilko/cashreceiptapi
 
-./gradlew build
-
-docker build -t alekseikhilko/cashreceiptapi .
-
-docker-compose up
 
 # Инициализация базы (товаров и скидочных карт)
 http://127.0.0.1:8080/init
