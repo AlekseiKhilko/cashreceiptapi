@@ -25,24 +25,29 @@ http://127.0.0.1:8080/api/check?items=1-2,2-10,3-10&card=1
 # API
 
 ## Список всех товаров
-http://127.0.0.1:8080/api/products
+curl http://127.0.0.1:8080/api/products \
+-H 'Content-Type: application/json'
 
 ## Получить один элемент. Метод GET
-http://127.0.0.1:8080/api/products/{id}
+curl http://127.0.0.1:8080/api/products/1 \
+-H 'Content-Type: application/json'
 
 ## Добавить товар. Метод POST 
 Рекомендуется использовать Postman.
-Использовать Content-Type = application/json
+Установить Content-Type = application/json
 
-http://127.0.0.1:8080/api/products
+curl -X POST http://127.0.0.1:8080/api/products \
+-H 'Content-Type: application/json' \
+-d '{"name":"Test product", "price":20.0, "promo":false}'
 
-{"name":"Test product", "price":20.0, "promo":false}
+
 
 ## Изменить товар. Метод PUT
 
-http://127.0.0.1:8080/api/products/{id}
+curl -X PUT  http://127.0.0.1:8080/api/products/1 \
+-H 'Content-Type: application/json' \
+-d '{"name":"Updated product", "price":20.0, "promo":true}'
 
-{"id":1, "name":"Updated product", "price":20.0, "promo":true}
 
 ## Удалить. Метод DELETE
 http://127.0.0.1:8080/api/products/{id}
