@@ -27,6 +27,9 @@ http://127.0.0.1:8080/api/check?items=1-2,2-10,3-10&card=1
 ## Список всех товаров
 http://127.0.0.1:8080/api/products
 
+## Получить один элемент GET
+http://127.0.0.1:8080/api/products/{id}
+
 ## Метод POST добавляет товар
 Рекомендуется использовать Postman
 Content-Type = application/json
