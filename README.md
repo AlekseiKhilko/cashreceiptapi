@@ -3,9 +3,18 @@
 
 # Запустить docker 
 
-docker run -p 8080:8080 alekseikhilko/cashreceiptapi
+https://hub.docker.com/r/alekseikhilko/cashreceiptapi
 
-Инициализация товаров и скидочных карт
+# GIT
+https://github.com/AlekseiKhilko/cashreceiptapi
+
+./gradlew build
+
+docker build -t alekseikhilko/cashreceiptapi .
+
+docker-compose up
+
+# Инициализация базы (товаров и скидочных карт)
 http://127.0.0.1:8080/init
 
 ## Получить чек
