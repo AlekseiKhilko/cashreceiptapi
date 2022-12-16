@@ -23,10 +23,9 @@ public class CashreceiptController {
     @Autowired
     private CardRepository CardRepository;
 
-//Map<String, String>
     @RequestMapping(value="/check", produces="application/json")
     public String  check(@RequestParam List<String> items, @RequestParam(required=false) Long card) throws ResourceNotFoundException {
-        //List<Product> productList = new ArrayList<Product>();
+
         Cart cart = new Cart(ProductRepository);
         for(String item: items) {
             String[] parts = item.split("-");
@@ -49,7 +48,6 @@ public class CashreceiptController {
         cart.calculate();
 
         CashReceipt cashReceipt = new CashReceipt(cart);
-
 
         JSONObject jsonHeader = new JSONObject();
         jsonHeader.put("Date", cashReceipt.getCashReceiptPrint().getTextDate());
