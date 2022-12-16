@@ -48,5 +48,5 @@ curl -X DELETE http://127.0.0.1:8080/api/products/1
 -H "Accept: application/json"
 
 
-## Аналогично для карт
-http://127.0.0.1:8080/api/cars
+## Скидочные карты
+http://127.0.0.1:8080/api/cards
