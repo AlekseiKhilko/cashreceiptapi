@@ -31,8 +31,8 @@ http://127.0.0.1:8080/api/products
 http://127.0.0.1:8080/api/products/{id}
 
 ## Метод POST добавляет товар
-Рекомендуется использовать Postman
-Content-Type = application/json
+Рекомендуется использовать Postman.
+Использовать Content-Type = application/json
 
 http://127.0.0.1:8080/api/products
 
