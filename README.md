@@ -30,7 +30,7 @@ http://127.0.0.1:8080/api/products
 ## Получить один элемент. Метод GET
 http://127.0.0.1:8080/api/products/{id}
 
-## Добавляет товар. Метод POST
+## Добавляет товар. Метод POST 
 Рекомендуется использовать Postman.
 Использовать Content-Type = application/json
 
