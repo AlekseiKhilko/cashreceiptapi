@@ -1,4 +1,4 @@
-# Cash Receipt API (тестовое задание API)
+# Cash Receipt API (тестовое задание)
 
 
 # Запустить docker 
